@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import { Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import avatar from './img/avatar.png';
 
 const useStyles = makeStyles({
   root: {
@@ -43,13 +42,15 @@ const useStyles = makeStyles({
   },
 });
 
+const img1 = require('../img/avatar.png');
+
 const QuestionBox = ({question, options, selected}) => {
   const classes = useStyles();
   const [answer, setAnswer] = useState(options);
   return (
     <div className="questionBox">
       <div className="questionImg">
-        <img src={avatar} alt="avatar"/>
+        <img src={img1} alt="icon"/>
       </div>
       <div className={"question"}>{question}</div>
       {answer.map((text, index) => (
