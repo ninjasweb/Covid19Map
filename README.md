@@ -1,0 +1,3 @@
+# Covid19Map
+Covid-19 Map and Auto-test
+TEST DE AUTOEVALUACIÓN DE SÍNTOMAS DEL COVID-19
