@@ -42,15 +42,19 @@ const useStyles = makeStyles({
   },
 });
 
-const img1 = require('../img/avatar.png');
 
-const QuestionBox = ({question, options, selected}) => {
+
+
+const QuestionBox = ({question, options, selected, imgId}) => {
+  //Adquirir el ID para las imágenes
+  const img1 = require(`../img/${imgId}.png`);
+
   const classes = useStyles();
   const [answer, setAnswer] = useState(options);
   return (
     <div className="questionBox">
       <div className="questionImg">
-        <img src={img1} alt="icon"/>
+      <img src={img1} alt="icon"/>
       </div>
       <div className={"question"}>{question}</div>
       {answer.map((text, index) => (

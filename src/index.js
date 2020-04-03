@@ -22,7 +22,8 @@ class CovidTest extends Component {
 		lat: null,
 		lon: null,
 		latlon: null,
-		address: null
+		address: null,
+		questionId: null
 	}
 	;
 
@@ -97,7 +98,7 @@ class CovidTest extends Component {
 
 
 	//Obtener las preguntas
-	getQuestions = (inicio) => {
+	getQuestions = () => {
 			quizService().then(
 				question => {
 					this.setState(
@@ -105,8 +106,16 @@ class CovidTest extends Component {
 							questionBank: question
 						});
 				});
+			this.setState(
+				{
+					questionId: this.state.questionId
+				}
+			);
 
 	}
+
+
+
 
 	//Computar la respuesta
 	computeAnswer = (answer, puntaje) => {
@@ -156,15 +165,15 @@ class CovidTest extends Component {
 			
 			<div className="container">
 				{this.state.inicio === false ? (<Inicio
-				
-				io	
 				inicio={this.state.inicio} showshow={this.showshow} getCoordinates={this.getCoordinates} showError={this.showError}	/>): null }
 				{this.state.inicio === true && this.state.questionBank.length > 0 &&
 				this.state.responses < 8 && 
 				this.state.questionBank.map(({question, answers, puntaje, questionId}) => (
-					<QuestionBox 
+					<QuestionBox
+					getImages={this.getImages}
 					question={question} 
-					options={answers} 
+					options={answers}
+					imgId={questionId} 
 					key={questionId}
 					selected={answer => this.computeAnswer(answer, puntaje)}
 					/>
