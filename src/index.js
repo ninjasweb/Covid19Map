@@ -26,7 +26,7 @@ class CovidTest extends Component {
 	}
 	;
 
-
+//Nuevo comment
 
 	
 	//Iniciar el Test 
