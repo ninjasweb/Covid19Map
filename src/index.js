@@ -36,7 +36,7 @@ class CovidTest extends Component {
 			}
 		);
 		if(navigator.geolocation){
-			navigator.geolocation.watchPosition(this.getCoordinates, this.showError);
+			navigator.geolocation.getCurrentPosition(this.getCoordinates, this.showError);
 		}
 		else {
 			alert("Tu navegador no soporta la Geolocalización");
