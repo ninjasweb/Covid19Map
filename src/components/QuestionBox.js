@@ -15,6 +15,7 @@ const useStyles = makeStyles({
     color: '#ffffff',
     backgroundColor: '#4671c6',
     borderColor: '#0063cc',
+    marginBottom: '0.5rem',
     fontFamily: [
       '-apple-system',
       'BlinkMacSystemFont',
