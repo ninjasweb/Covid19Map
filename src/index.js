@@ -170,7 +170,6 @@ class CovidTest extends Component {
 				this.state.responses < 8 && 
 				this.state.questionBank.map(({question, answers, puntaje, questionId}) => (
 					<QuestionBox
-					getImages={this.getImages}
 					question={question} 
 					options={answers}
 					imgId={questionId} 
