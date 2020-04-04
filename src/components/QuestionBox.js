@@ -7,12 +7,13 @@ const useStyles = makeStyles({
     boxShadow: 'none',
     textTransform: 'none',
     fontSize: 16,
+    fontWeight: "bold",
     padding: '6px 12px',
     border: '1px solid',
     marginRight: '2rem',
     lineHeight: 1.5,
     color: '#ffffff',
-    backgroundColor: '#3c5064',
+    backgroundColor: '#4671c6',
     borderColor: '#0063cc',
     fontFamily: [
       '-apple-system',
@@ -27,9 +28,10 @@ const useStyles = makeStyles({
       '"Segoe UI Symbol"',
     ].join(','),
     '&:hover': {
-      backgroundColor: '#0069d9',
+      backgroundColor: '#6bdddd',
       borderColor: '#0062cc',
       boxShadow: 'none',
+      color: '#4671c6',
     },
     '&:active': {
       boxShadow: 'none',
