@@ -7,9 +7,8 @@ import Result from "./components/Result";
 import Inicio from "./components/Inicio";
 import Footer from "./components/Footer";
 
-//const API_KEY = "AIzaSyAoqNSoiv1sNNZ_FnlPLNMz1jYaPCYefkU";
 
-console.log(process.env.REACT_APP_API_KEY);
+
 
 
 
@@ -86,7 +85,8 @@ class CovidTest extends Component {
 		//Mostrar el Mapa
 		showMap = () => {
 			var latlon = this.state.lat + "," + this.state.lon;
-			var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=17&size=400x300&sensor=false&key=AIzaSyAoqNSoiv1sNNZ_FnlPLNMz1jYaPCYefkU";
+			var myapi = process.env.REACT_APP_API_KEY;
+			var img_url = 'https://maps.googleapis.com/maps/api/staticmap?center='+latlon+'&zoom=17&size=400x300&sensor=false&key='+myapi+'';
 			if (this.state.lan === null) {
 				return(<p>Sin coordenadas</p>);
 			} 
