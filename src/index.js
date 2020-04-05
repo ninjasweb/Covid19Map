@@ -165,7 +165,6 @@ class CovidTest extends Component {
 	render() {
 		return (
 			<Fragment>
-			<div className="content">
 			
 			<div className="container">
 				{this.state.inicio === false ? (<Inicio
@@ -184,16 +183,12 @@ class CovidTest extends Component {
 
 				{this.state.responses === 8 ? (<Result score={this.state.score} playAgain={this.playAgain} publicarSintomas={this.publicarSintomas} lat={this.state.lat} lon={this.state.lon} latlon={this.state.latlon} showMap={this.showMap} />) : null}
 
-
-			</div>
-
-			
-			
-
-
-			</div>
-
 			<Footer/>
+			</div>
+
+			
+
+
 
 
 
