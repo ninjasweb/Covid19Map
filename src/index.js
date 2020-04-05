@@ -9,9 +9,12 @@ import Footer from "./components/Footer";
 
 //const API_KEY = "AIzaSyAoqNSoiv1sNNZ_FnlPLNMz1jYaPCYefkU";
 
+console.log(process.env.REACT_APP_API_KEY);
+
 
 
 class CovidTest extends Component {
+
 
 
 	state = {
@@ -42,6 +45,7 @@ class CovidTest extends Component {
 		else {
 			alert("Tu navegador no soporta la Geolocalización");
 		}
+		
 
 	}
 
