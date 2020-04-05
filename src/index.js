@@ -5,7 +5,6 @@ import quizService from "./quizService";
 import QuestionBox from "./components/QuestionBox";
 import Result from "./components/Result";
 import Inicio from "./components/Inicio";
-import Footer from "./components/Footer";
 
 
 
@@ -181,9 +180,15 @@ class CovidTest extends Component {
 					/>
 				))}
 
-				{this.state.responses === 8 ? (<Result score={this.state.score} playAgain={this.playAgain} publicarSintomas={this.publicarSintomas} lat={this.state.lat} lon={this.state.lon} latlon={this.state.latlon} showMap={this.showMap} />) : null}
-
-			<Footer/>
+				{this.state.responses === 8 ? 
+				(<Result 
+					score={this.state.score} 
+					playAgain={this.playAgain} 
+					publicarSintomas={this.publicarSintomas} 
+					lat={this.state.lat} 
+					lon={this.state.lon} 
+					latlon={this.state.latlon} 
+					showMap={this.showMap} />) : null}
 			</div>
 
 			
