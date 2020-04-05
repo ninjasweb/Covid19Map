@@ -49,16 +49,16 @@ class CovidTest extends Component {
 	showError = (error) => {
 		switch(error.code) {
 			case error.PERMISSION_DENIED:
-			  alert("User denied the request for Geolocation.");
+			  alert("La usuario denegó la solicitud de geolocalización.");
 			  break;
 			case error.POSITION_UNAVAILABLE:
-			  alert("Location information is unavailable.");
+			  alert("La información de ubicación no está disponible.");
 			  break;
 			case error.TIMEOUT:
-			  alert("The request to get user location timed out.");
+			  alert("Se agotó el tiempo de espera de la solicitud para obtener la ubicación del usuario.");
 			  break;
 			 default:
-			  alert("An unknown error occurred.");
+			  alert("Ha ocurrido un error");
 			  break;
 	}
 }

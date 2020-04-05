@@ -1,25 +1,12 @@
 import React from "react";
-
-function Advertencia(score) {
-  if (score > 30){
-    return (
-      <p>Advertencia: Tienes los síntomas. <br></br>
-       <span className="linkAd">Quizás debas revisar esto <a href="https://ninjasweb.com">LINK</a></span>
-       </p>
-    );
-  } else {
-    return(
-      <p>No tienes los síntomas</p>
-    );
-  }
-}
+import Alertbar from "./Alertbar";
 
 
 const Result = ({score, playAgain, publicarSintomas, showMap}) => (
   <div className="score-board">
     <div className="score">
       <p>Tu puntaje es: <b>{score}</b></p>
-      <div>{Advertencia(score)}</div>
+      <Alertbar score={score}/>
       <div className="mapa" id="mapa">
       {showMap()}
       </div>
