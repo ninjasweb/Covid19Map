@@ -159,6 +159,7 @@ class CovidTest extends Component {
 	//Ciclo de vida
 	componentDidMount(){
 		this.getQuestions();
+		window.scrollTo(0, 0);
 	}
 	// Agregar debajo de content <div className="title">AUTO-TEST COVID-19 (SARS-COV-2)</div>
 	render() {
@@ -190,12 +191,6 @@ class CovidTest extends Component {
 					latlon={this.state.latlon} 
 					showMap={this.showMap} />) : null}
 			</div>
-
-			
-
-
-
-
 
 			</Fragment>
 			);

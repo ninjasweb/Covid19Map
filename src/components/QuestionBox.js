@@ -54,6 +54,7 @@ const QuestionBox = ({question, options, selected, imgId}) => {
 
   const classes = useStyles();
   const [answer, setAnswer] = useState(options);
+  window.scrollTo(0, 0);
   return (
     <div className="questionBox">
       <div className="questionImg">

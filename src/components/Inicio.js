@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
     root: {
-      background: 'linear-gradient(45deg, #3c5064 30%, #01a5bd 90%)',
+      background: 'rgb(70,113,198)',
       border: 0,
       borderRadius: 3,
       boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
@@ -14,7 +14,22 @@ const useStyles = makeStyles({
       padding: '0 30px',
       marginTop: '3rem',
       fontWeight: 'bold',
+    '&:hover': {
+      backgroundColor: '#6bdddd',
+      borderColor: '#0062cc',
+      boxShadow: 'none',
+      color: '#4671c6',
     },
+    '&:active': {
+      boxShadow: 'none',
+      backgroundColor: '#0062cc',
+      borderColor: '#005cbf',
+    },
+    '&:focus': {
+      boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
+    },
+    },
+  
   });
 
 
