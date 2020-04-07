@@ -13,6 +13,8 @@ function Advertencia(score) {
         </div>
           <ul>
             <li>Observa tu evolución y si tus síntomas empeoran, sobre todo si tienes dificultad respiratoria, ponte en contacto con el teléfono designado por tu Comunidad para la atención sobre el COVID-19 o con tu centro de salud.</li>
+            <li>Quédate en casa para evitar contagios.</li>
+            <li>Utiliza una mascarilla (continuamente y cambiándola cada 24 horas).</li>
           </ul>
         </div>
         </Fragment>
