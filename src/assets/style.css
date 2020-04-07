@@ -138,6 +138,15 @@ p {
   margin-right: 2rem;
 }
 
+/*Respuestas*/
+.mensaje {
+  padding: 0% 20%;
+}
+
+.mensaje ul li {
+  font-size: 1rem;
+}
+
 
 .score-board {
   position: relative;
@@ -147,38 +156,63 @@ p {
 .score {
   position: absolute;
   width: 100%;
-  font-size: 3em;
+  font-size: 2em;
   top: 100px;
   text-align: center;
 }
 
 .playBtn {
-  position: relative;
-  font-size: 1rem;
-  padding: 10px;
-  background-color: blue;
-  color: rgb(255, 255, 255);
-  width: 150px;
-  left: 0px;
-  right: 0px;
-  margin: auto;
-  outline: none;
+  background: rgb(70,113,198);
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0px 2px 10px rgba(4, 3, 5, 0.8);
+  color: white;
+  height: 48;
+  margin-top: 3rem;
+  font-weight: bold;
   cursor: pointer;
- display: inline-block;
- font-weight: bold;
+  padding: 1rem;
+}
+
+.playBtn:hover {
+  background-color: #6bdddd ;
+  border-color: #0062cc;
+  box-shadow: none;
+  color: #4671c6;
+}
+
+.playBtn:active {
+  box-shadow: none;
+  background-color: #0062cc;
+  border-color: #005cbf;
 }
 
 .publicBtn {
-  position: relative;
-  width: 150px;
-  padding: 10px;
-  margin-top: 1em;
-  background-color: rgb(46, 182, 46);
-  font-size: 1rem;
-  color: #fff;
+  background: #6bdddd;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0px 2px 10px rgba(4, 3, 5, 0.8);
+  color: #0062cc;
+  height: 48;
+  margin-top: 3rem;
   font-weight: bold;
-  margin-right: 20px;
   cursor: pointer;
+  padding: 1rem;
+  margin-right: 2rem;
+}
+
+.publicBtn:hover {
+      background-color: #30bd93;
+      border-color: #0062cc;
+      box-shadow: none;
+      color: #fff;
+}
+
+.publicBtn:active {
+  box-shadow: none;
+  background-color: #0062cc;
+  border-color: #005cbf;
+
 }
 
 .linkAd {
@@ -286,7 +320,7 @@ p {
   border-radius: 6px;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
-  width: 300px;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -313,7 +347,7 @@ p {
 
 /*75% de Progreso Alto*/
 #twentyfive:checked ~ .progress > .progress-bar {
-  width: 75%;
+  width: 90%;
   background: rgb(227,123,18);
   background: -moz-linear-gradient(90deg, rgba(227,123,18,1) 14%, rgba(255,0,0,1) 59%);
   background: -webkit-linear-gradient(90deg, rgba(227,123,18,1) 14%, rgba(255,0,0,1) 59%);
