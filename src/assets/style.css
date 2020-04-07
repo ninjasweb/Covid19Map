@@ -175,10 +175,10 @@ p {
 }
 
 .playBtn:hover {
-  background-color: #6bdddd ;
+  background-color: rgb(70, 89, 198) ;
   border-color: #0062cc;
   box-shadow: none;
-  color: #4671c6;
+  color: #fff;
 }
 
 .playBtn:active {

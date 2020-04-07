@@ -104,10 +104,10 @@ class CovidTest extends Component {
 
 	}
 	//Computar la respuesta
-	computeAnswer = (answer, puntaje) => {
+	computeAnswer = (answer, scoremark) => {
 		if (answer === "SI") {
 			this.setState(
-				{score: this.state.score + puntaje}
+				{score: this.state.score + scoremark}
 			);
 
 		}
@@ -150,13 +150,13 @@ class CovidTest extends Component {
 				inicio={this.state.inicio} showshow={this.showshow} getCoordinates={this.getCoordinates} showError={this.showError}	/>): null }
 				{this.state.inicio === true && this.state.questionBank.length > 0 &&
 				this.state.responses < 8 && 
-				this.state.questionBank.map(({question, answers, puntaje, questionId}) => (
+				this.state.questionBank.map(({question, answers, scoremark, questionId}) => (
 					<QuestionBox
 					question={question} 
 					options={answers}
 					imgId={questionId} 
 					key={questionId}
-					selected={answer => this.computeAnswer(answer, puntaje)}
+					selected={answer => this.computeAnswer(answer, scoremark)}
 					/>
 				))}
 
