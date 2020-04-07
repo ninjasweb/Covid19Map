@@ -44,11 +44,9 @@ const Inicio = ({showshow}) => {
             <h3 className="subtitulo">Un proyecto de código abierto<br></br> para ayudar a contener y localizar posibles brote del virus</h3>
             <Button className={classes.root} onClick={showshow}>EMPEZAR TEST</Button>
             <p className="copydata">Por favor <b>permite</b> que esta app acceda a tu ubicación. <br></br> no requerimos ningún otro dato personal más.</p>
-            <a href="https://www.github.com/ninjasweb/Covid19Map" target="_blank"><img src={img1} alt="github"/></a>
+            <a href="https://www.github.com/ninjasweb/Covid19Map" target="_blank" rel="noopener noreferrer"><img src={img1} alt="github"/></a>
         </div>
       </div>
-
-
     );
 };
 
