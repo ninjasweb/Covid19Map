@@ -1,9 +1,8 @@
 # Covid19Map
-Covid-19 Map and Auto-test
 #TEST DE AUTOEVALUACIÓN DE SÍNTOMAS DEL COVID-19
 Este test es un auto-diagnostico de los principales síntomas de Covid-19 enfermedad causada por el Coronavirus (Covid-Sars-2), no sustituye ni pretende sustituir, en ningún caso, el consejo de un profesional médico.
 
-# Metolodología
+# Metodología
 Las preguntas, y sus puntuaciones por contestar con un "Sí", son las siguientes:
 
     ¿Tienes sensación de falta de aire de inicio brusco (en ausencia de cualquier otra patología que justifique este síntoma)? 60 puntos
