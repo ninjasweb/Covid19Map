@@ -16,3 +16,6 @@ Las preguntas, y sus puntuaciones por contestar con un "Sí", son las siguientes
     ¿Llevas más de 20 días con estos síntomas? -15 puntos
 
 Tomadas de referencia del sitio: https://www.coronamadrid.com/ Una inciativa de Comunidad de Madrid. 
+
+
+Este es un proyecto de código libre y abierto a colaboración. Los datos personales son totalmente anónimos. 
