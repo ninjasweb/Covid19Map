@@ -18,7 +18,7 @@ Las preguntas, y sus puntuaciones por contestar con un "Sí", son las siguientes
 
 Preguntas con su respectiva puntuación.
 
-```
+```javascript
 const qBank = [
   {
     question:
