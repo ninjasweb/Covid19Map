@@ -27,11 +27,7 @@ class CovidTest extends Component {
 		questionId: null
 	}
 	;
-
-
-	
-	//Iniciar el Test 
-
+	//Iniciar el Test
 	showshow = () => {
     	this.setState(
 			{inicio: true
@@ -46,7 +42,6 @@ class CovidTest extends Component {
 		
 
 	}
-
 	//Mensaje de error
 	showError = (error) => {
 		switch(error.code) {
@@ -65,9 +60,6 @@ class CovidTest extends Component {
 	}
 }
 
-
-
-		
 	//Obtener Coordenadas
 	getCoordinates = (position) => {
 		console.log(position.coords.longitude);
@@ -80,7 +72,6 @@ class CovidTest extends Component {
 		);
 
 	}
-
 		//Mostrar el Mapa
 		showMap = () => {
 			var latlon = this.state.lat + "," + this.state.lon;
@@ -96,10 +87,6 @@ class CovidTest extends Component {
 			}
 	
 		}
-	
-
-
-
 	//Obtener las preguntas
 	getQuestions = () => {
 			quizService().then(
@@ -116,10 +103,6 @@ class CovidTest extends Component {
 			);
 
 	}
-
-
-
-
 	//Computar la respuesta
 	computeAnswer = (answer, puntaje) => {
 		if (answer === "SI") {
@@ -136,7 +119,6 @@ class CovidTest extends Component {
 		);
 
 	}
-
 	//Jugar de Nuevo
 	playAgain = () => {
 		this.getQuestions();
@@ -153,9 +135,6 @@ class CovidTest extends Component {
 		ubicacion = this.state.lat + "," + this.state.lon;
 		alert(valoracion + "," + ubicacion);
 	}
-
-	
-
 	//Ciclo de vida
 	componentDidMount(){
 		this.getQuestions();
